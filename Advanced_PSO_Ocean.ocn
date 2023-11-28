@@ -1,0 +1,354 @@
+
+(procedure khoitao()
+	simulator( 'spectre )
+	design(	 "/home/disk/simulation/SIM_IC61/op_amp_1/spectre/schematic/netlist/netlist")
+	resultsDir( "/home/disk/simulation/SIM_IC61/op_amp_1/spectre/schematic" )
+	modelFile( 
+		'("/home/hoangtrang/Thu_vien_PDK/PDK_CRN65LP_v1.7a_Official_IC61_20120914_all/PDK_CRN65LP_v1.7a_Official_IC61_20120914/tsmcN65/../models/spectre/toplevel.scs" "tt_lib")
+	)
+	fin=infile("/mnt/hgfs/shared/thongso.txt")
+	fscanf(fin "\n%s" CL_a_var			)
+	fscanf(fin "\n%s" CL_b_var			)
+	fscanf(fin "\n%s" CL_c_var			)
+	fscanf(fin "\n%s" CL_d_var			)
+	fscanf(fin "\n%s" CL_e_var			)
+	fscanf(fin "\n%s" CL_f_var			)
+	fscanf(fin "\n%s" I_a_var			)
+	fscanf(fin "\n%s" I_b_var			)
+	fscanf(fin "\n%s" I_c_var			)
+	fscanf(fin "\n%s" I_d_var			)
+	fscanf(fin "\n%s" I_e_var			)
+	fscanf(fin "\n%s" I_f_var			)
+	fscanf(fin "\n%s" L1_a_var			)
+	fscanf(fin "\n%s" L1_b_var			)
+	fscanf(fin "\n%s" L1_c_var			)
+	fscanf(fin "\n%s" L1_d_var			)
+	fscanf(fin "\n%s" L1_e_var			)
+	fscanf(fin "\n%s" L1_f_var			)
+	fscanf(fin "\n%s" L2_a_var			)
+	fscanf(fin "\n%s" L2_b_var			)
+	fscanf(fin "\n%s" L2_c_var			)
+	fscanf(fin "\n%s" L2_d_var			)
+	fscanf(fin "\n%s" L2_e_var			)
+	fscanf(fin "\n%s" L2_f_var			)
+	fscanf(fin "\n%s" L3_a_var			)
+	fscanf(fin "\n%s" L3_b_var			)
+	fscanf(fin "\n%s" L3_c_var			)
+	fscanf(fin "\n%s" L3_d_var			)
+	fscanf(fin "\n%s" L3_e_var			)
+	fscanf(fin "\n%s" L3_f_var			)
+	fscanf(fin "\n%s" L4_a_var			)
+	fscanf(fin "\n%s" L4_b_var			)
+	fscanf(fin "\n%s" L4_c_var			)
+	fscanf(fin "\n%s" L4_d_var			)
+	fscanf(fin "\n%s" L4_e_var			)
+	fscanf(fin "\n%s" L4_f_var			)
+	fscanf(fin "\n%s" L5_a_var			)
+	fscanf(fin "\n%s" L5_b_var			)
+	fscanf(fin "\n%s" L5_c_var			)
+	fscanf(fin "\n%s" L5_d_var			)
+	fscanf(fin "\n%s" L5_e_var			)
+	fscanf(fin "\n%s" L5_f_var			)
+	fscanf(fin "\n%s" L6_a_var			)
+	fscanf(fin "\n%s" L6_b_var			)
+	fscanf(fin "\n%s" L6_c_var			)
+	fscanf(fin "\n%s" L6_d_var			)
+	fscanf(fin "\n%s" L6_e_var			)
+	fscanf(fin "\n%s" L6_f_var			)
+	fscanf(fin "\n%s" W1_a_var			)
+	fscanf(fin "\n%s" W1_b_var			)
+	fscanf(fin "\n%s" W1_c_var			)
+	fscanf(fin "\n%s" W1_d_var			)
+	fscanf(fin "\n%s" W1_e_var			)
+	fscanf(fin "\n%s" W1_f_var			)
+	fscanf(fin "\n%s" W2_a_var			)
+	fscanf(fin "\n%s" W2_b_var			)
+	fscanf(fin "\n%s" W2_c_var			)
+	fscanf(fin "\n%s" W2_d_var			)
+	fscanf(fin "\n%s" W2_e_var			)
+	fscanf(fin "\n%s" W2_f_var			)
+	fscanf(fin "\n%s" W3_a_var			)
+	fscanf(fin "\n%s" W3_b_var			)
+	fscanf(fin "\n%s" W3_c_var			)
+	fscanf(fin "\n%s" W3_d_var			)
+	fscanf(fin "\n%s" W3_e_var			)
+	fscanf(fin "\n%s" W3_f_var			)
+	fscanf(fin "\n%s" W4_a_var			)
+	fscanf(fin "\n%s" W4_b_var			)
+	fscanf(fin "\n%s" W4_c_var			)
+	fscanf(fin "\n%s" W4_d_var			)
+	fscanf(fin "\n%s" W4_e_var			)
+	fscanf(fin "\n%s" W4_f_var			)
+	fscanf(fin "\n%s" W5_a_var			)
+	fscanf(fin "\n%s" W5_b_var			)
+	fscanf(fin "\n%s" W5_c_var			)
+	fscanf(fin "\n%s" W5_d_var			)
+	fscanf(fin "\n%s" W5_e_var			)
+	fscanf(fin "\n%s" W5_f_var			)
+	fscanf(fin "\n%s" W6_a_var			)
+	fscanf(fin "\n%s" W6_b_var			)
+	fscanf(fin "\n%s" W6_c_var			)
+	fscanf(fin "\n%s" W6_d_var			)
+	fscanf(fin "\n%s" W6_e_var			)
+	fscanf(fin "\n%s" W6_f_var			)
+	fscanf(fin "\n%s" ac_vminus_var		)
+	fscanf(fin "\n%s" ac_vplus_var		)
+	fscanf(fin "\n%s" dc_vplus_var		)
+	fscanf(fin "\n%s" tran_vminus_var	)
+	fscanf(fin "\n%s" tran_vplus_var	)
+	fscanf(fin "\n%s" vdd_var			)
+	fscanf(fin "\n%s" vss_var			)
+	close(fin)
+
+)
+
+(procedure chay()
+	analysis('tran ?stop "6.5u"  )
+	analysis('dc ?saveOppoint t  ?param "dc_vplus"  ?start "vss"  
+			?stop "vdd"  )
+	analysis('ac ?start "1"  ?stop "1G"  )
+	desVar(	  "CL_a" 		 		CL_a_var		)
+	desVar(	  "CL_b" 		 		CL_b_var		)
+	desVar(	  "CL_c" 		 		CL_c_var		)
+	desVar(	  "CL_d" 		 		CL_d_var		)
+	desVar(	  "CL_e" 		 		CL_e_var		)
+	desVar(	  "CL_f" 		 		CL_f_var		)
+	desVar(	  "I_a" 		 		I_a_var			)
+	desVar(	  "I_b" 		 		I_b_var			)
+	desVar(	  "I_c" 		 		I_c_var			)
+	desVar(	  "I_d" 		 		I_d_var			)
+	desVar(	  "I_e" 		 		I_e_var			)
+	desVar(	  "I_f" 		 		I_f_var			)
+	desVar(	  "L1_a" 		 		L1_a_var		)
+	desVar(	  "L1_b" 		 		L1_b_var		)
+	desVar(	  "L1_c" 		 		L1_c_var		)
+	desVar(	  "L1_d" 		 		L1_d_var		)
+	desVar(	  "L1_e" 		 		L1_e_var		)
+	desVar(	  "L1_f" 		 		L1_f_var		)
+	desVar(	  "L2_a" 		 		L2_a_var		)
+	desVar(	  "L2_b" 		 		L2_b_var		)
+	desVar(	  "L2_c" 		 		L2_c_var		)
+	desVar(	  "L2_d" 		 		L2_d_var		)
+	desVar(	  "L2_e" 		 		L2_e_var		)
+	desVar(	  "L2_f" 		 		L2_f_var		)
+	desVar(	  "L3_a" 		 		L3_a_var		)
+	desVar(	  "L3_b" 		 		L3_b_var		)
+	desVar(	  "L3_c" 		 		L3_c_var		)
+	desVar(	  "L3_d" 		 		L3_d_var		)
+	desVar(	  "L3_e" 		 		L3_e_var		)
+	desVar(	  "L3_f" 		 		L3_f_var		)
+	desVar(	  "L4_a" 		 		L4_a_var		)
+	desVar(	  "L4_b" 		 		L4_b_var		)
+	desVar(	  "L4_c" 		 		L4_c_var		)
+	desVar(	  "L4_d" 		 		L4_d_var		)
+	desVar(	  "L4_e" 		 		L4_e_var		)
+	desVar(	  "L4_f" 		 		L4_f_var		)
+	desVar(	  "L5_a" 		 		L5_a_var		)
+	desVar(	  "L5_b" 		 		L5_b_var		)
+	desVar(	  "L5_c" 		 		L5_c_var		)
+	desVar(	  "L5_d" 		 		L5_d_var		)
+	desVar(	  "L5_e" 		 		L5_e_var		)
+	desVar(	  "L5_f" 		 		L5_f_var		)
+	desVar(	  "L6_a" 		 		L6_a_var		)
+	desVar(	  "L6_b" 		 		L6_b_var		)
+	desVar(	  "L6_c" 		 		L6_c_var		)
+	desVar(	  "L6_d" 		 		L6_d_var		)
+	desVar(	  "L6_e" 		 		L6_e_var		)
+	desVar(	  "L6_f" 		 		L6_f_var		)
+	desVar(	  "W1_a" 		 		W1_a_var		)
+	desVar(	  "W1_b" 		 		W1_b_var		)
+	desVar(	  "W1_c" 		 		W1_c_var		)
+	desVar(	  "W1_d" 		 		W1_d_var		)
+	desVar(	  "W1_e" 		 		W1_e_var		)
+	desVar(	  "W1_f" 		 		W1_f_var		)
+	desVar(	  "W2_a" 		 		W2_a_var		)
+	desVar(	  "W2_b" 		 		W2_b_var		)
+	desVar(	  "W2_c" 		 		W2_c_var		)
+	desVar(	  "W2_d" 		 		W2_d_var		)
+	desVar(	  "W2_e" 		 		W2_e_var		)
+	desVar(	  "W2_f" 		 		W2_f_var		)
+	desVar(	  "W3_a" 		 		W3_a_var		)
+	desVar(	  "W3_b" 		 		W3_b_var		)
+	desVar(	  "W3_c" 		 		W3_c_var		)
+	desVar(	  "W3_d" 		 		W3_d_var		)
+	desVar(	  "W3_e" 		 		W3_e_var		)
+	desVar(	  "W3_f" 		 		W3_f_var		)
+	desVar(	  "W4_a" 		 		W4_a_var		)
+	desVar(	  "W4_b" 		 		W4_b_var		)
+	desVar(	  "W4_c" 		 		W4_c_var		)
+	desVar(	  "W4_d" 		 		W4_d_var		)
+	desVar(	  "W4_e" 		 		W4_e_var		)
+	desVar(	  "W4_f" 		 		W4_f_var		)
+	desVar(	  "W5_a" 		 		W5_a_var		)
+	desVar(	  "W5_b" 		 		W5_b_var		)
+	desVar(	  "W5_c" 		 		W5_c_var		)
+	desVar(	  "W5_d" 		 		W5_d_var		)
+	desVar(	  "W5_e" 		 		W5_e_var		)
+	desVar(	  "W5_f" 		 		W5_f_var		)
+	desVar(	  "W6_a" 		 		W6_a_var		)
+	desVar(	  "W6_b" 		 		W6_b_var		)
+	desVar(	  "W6_c" 		 		W6_c_var		)
+	desVar(	  "W6_d" 		 		W6_d_var		)
+	desVar(	  "W6_e" 		 		W6_e_var		)
+	desVar(	  "W6_f" 		 		W6_f_var		)
+	desVar(	  "ac_vminus" 	 		ac_vminus_var	)
+	desVar(	  "ac_vplus" 	 		ac_vplus_var	)
+	desVar(	  "dc_vplus" 	 		dc_vplus_var	)
+	desVar(	  "tran_vminus"  		tran_vminus_var	)
+	desVar(	  "tran_vplus" 	 		tran_vplus_var	)
+	desVar(	  "vdd" 		 		vdd_var			)
+	desVar(	  "vss" 		 		vss_var			)
+
+	envOption(
+		'analysisOrder  list("dc" "ac" "tran" "stb") 
+	)
+	temp( 27 ) 
+	run()
+
+
+	;; TINH TOAN
+	;;----------------------
+	;;a
+	;;pre
+	
+	OpenLoopGain_a = (dB20(mag(v("/vout_a" ?result "ac"))) - dB20((mag(v("/vplus" ?result "ac")) - mag(v("/vminus_a" ?result "ac")))))
+
+	;;main
+	openLoopGain_a = value(OpenLoopGain_a 10   )
+	error_a = abs(value(v("/vplus" ?result "tran")  7e-6   ) - value(v("/vout_a" ?result "tran")  7e-6   ) )/ value(v("/vplus" ?result "tran")  7e-6   ) * 100
+	if( error_a > 10 cross_a=7e-6  cross_a=cross(v("/vout_a" ?result "tran") VAR("tran_vplus")*0.9 1 "rising" nil nil  ))
+	tSettle_a = cross_a - 5e-6
+	slewRate_a = VAR("tran_vplus")*0.9*2/(tSettle_a*1e6)
+
+	vicMax_a = VAR("vdd")+OP("/M4a","vgs")+OP("/M1a","vth")
+	vicMin_a = VAR("vss")+OP("/M5a","vdsat")+OP("/M1a","vgs")
+	;;----------------------
+	;; b
+	;;pre
+	
+	OpenLoopGain_b = (dB20(mag(v("/vout_b" ?result "ac"))) - dB20((mag(v("/vplus" ?result "ac")) - mag(v("/vminus_b" ?result "ac")))))
+
+	;;main
+	openLoopGain_b = value(OpenLoopGain_b 10   )
+	error_b = abs(value(v("/vplus" ?result "tran")  7e-6   ) - value(v("/vout_b" ?result "tran")  7e-6   ) )/ value(v("/vplus" ?result "tran")  7e-6   ) * 100
+	if( error_b > 10 cross_b=7e-6  cross_b=cross(v("/vout_b" ?result "tran") VAR("tran_vplus")*0.9 1 "rising" nil nil  ))
+	tSettle_b = cross_b - 5e-6
+	slewRate_b = VAR("tran_vplus")*0.9*2/(tSettle_b*1e6)
+
+	vicMax_b = VAR("vdd")+OP("/M4b","vgs")+OP("/M1b","vth")
+	vicMin_b = VAR("vss")+OP("/M5b","vdsat")+OP("/M1b","vgs")
+	;;----------------------
+	;; c
+	;;pre
+
+	OpenLoopGain_c = (dB20(mag(v("/vout_c" ?result "ac"))) - dB20((mag(v("/vplus" ?result "ac")) - mag(v("/vminus_c" ?result "ac")))))
+
+	;;main
+	openLoopGain_c = value(OpenLoopGain_c 10   )
+	error_c = abs(value(v("/vplus" ?result "tran")  7e-6   ) - value(v("/vout_c" ?result "tran")  7e-6   ) )/ value(v("/vplus" ?result "tran")  7e-6   ) * 100
+	if( error_c > 10 cross_c=7e-6  cross_c=cross(v("/vout_c" ?result "tran") VAR("tran_vplus")*0.9 1 "rising" nil nil  ))
+	tSettle_c = cross_c - 5e-6
+	slewRate_c = VAR("tran_vplus")*0.9*2/(tSettle_c*1e6)
+
+	vicMax_c = VAR("vdd")+OP("/M4c","vgs")+OP("/M1c","vth")
+	vicMin_c = VAR("vss")+OP("/M5c","vdsat")+OP("/M1c","vgs")
+	;;----------------------
+	;; d
+	;;pre
+	
+	OpenLoopGain_d = (dB20(mag(v("/vout_d" ?result "ac"))) - dB20((mag(v("/vplus" ?result "ac")) - mag(v("/vminus_d" ?result "ac")))))
+
+	;;main
+	openLoopGain_d = value(OpenLoopGain_d 10   )
+	error_d = abs(value(v("/vplus" ?result "tran")  7e-6   ) - value(v("/vout_d" ?result "tran")  7e-6   ) )/ value(v("/vplus" ?result "tran")  7e-6   ) * 100
+	if( error_d > 10 cross_d=7e-6  cross_d=cross(v("/vout_d" ?result "tran") VAR("tran_vplus")*0.9 1 "rising" nil nil  ))
+	tSettle_d = cross_d - 5e-6
+	slewRate_d = VAR("tran_vplus")*0.9*2/(tSettle_d*1e6)
+
+	vicMax_d = VAR("vdd")+OP("/M4d","vgs")+OP("/M1d","vth")
+	vicMin_d = VAR("vss")+OP("/M5d","vdsat")+OP("/M1d","vgs")
+	;;----------------------
+	;; e
+	;;pre
+	
+	OpenLoopGain_e = (dB20(mag(v("/vout_e" ?result "ac"))) - dB20((mag(v("/vplus" ?result "ac")) - mag(v("/vminus_e" ?result "ac")))))
+
+	;;main
+	openLoopGain_e = value(OpenLoopGain_e 10   )
+	error_e = abs(value(v("/vplus" ?result "tran")  7e-6   ) - value(v("/vout_e" ?result "tran")  7e-6   ) )/ value(v("/vplus" ?result "tran")  7e-6   ) * 100
+	if( error_e > 10 cross_e=7e-6  cross_e=cross(v("/vout_e" ?result "tran") VAR("tran_vplus")*0.9 1 "rising" nil nil  ))
+	tSettle_e = cross_e - 5e-6
+	slewRate_e = VAR("tran_vplus")*0.9*2/(tSettle_e*1e6)
+
+	vicMax_e = VAR("vdd")+OP("/M4e","vgs")+OP("/M1e","vth")
+	vicMin_e = VAR("vss")+OP("/M5e","vdsat")+OP("/M1e","vgs")
+	;;-----------------------
+	;; f
+	;;pre
+	
+	OpenLoopGain_f = (dB20(mag(v("/vout_f" ?result "ac"))) - dB20((mag(v("/vplus" ?result "ac")) - mag(v("/vminus_f" ?result "ac")))))
+
+	;;main
+	openLoopGain_f = value(OpenLoopGain_f 10   )
+	error_f = abs(value(v("/vplus" ?result "tran")  7e-6   ) - value(v("/vout_f" ?result "tran")  7e-6   ) )/ value(v("/vplus" ?result "tran")  7e-6   ) * 100
+	if( error_f > 10 cross_f=7e-6  cross_f=cross(v("/vout_f" ?result "tran") VAR("tran_vplus")*0.9 1 "rising" nil nil  ))
+	tSettle_f = cross_f - 5e-6
+	slewRate_f = VAR("tran_vplus")*0.9*2/(tSettle_f*1e6)
+
+	vicMax_f = VAR("vdd")+OP("/M4f","vgs")+OP("/M1f","vth")
+	vicMin_f = VAR("vss")+OP("/M5f","vdsat")+OP("/M1f","vgs")
+
+	;;------------------
+
+	;; XUAT
+	filekiemtra=outfile("/mnt/hgfs/shared/ketqua.txt")
+				fprintf(filekiemtra "%f\r" openLoopGain_a)
+				fprintf(filekiemtra "%f\r" error_a)
+				fprintf(filekiemtra "%f\r" slewRate_a)
+				fprintf(filekiemtra "%f\r" vicMax_a)
+				fprintf(filekiemtra "%f\r" vicMin_a)
+				;;fprintf(filekiemtra "\n")
+				
+				fprintf(filekiemtra "%f\r" openLoopGain_b)
+				fprintf(filekiemtra "%f\r" error_b)
+				fprintf(filekiemtra "%f\r" slewRate_b)
+				fprintf(filekiemtra "%f\r" vicMax_b)
+				fprintf(filekiemtra "%f\r" vicMin_b)
+				;;fprintf(filekiemtra "\n")
+				
+				fprintf(filekiemtra "%f\r" openLoopGain_c)
+				fprintf(filekiemtra "%f\r" error_c)
+				fprintf(filekiemtra "%f\r" slewRate_c)
+				fprintf(filekiemtra "%f\r" vicMax_c)
+				fprintf(filekiemtra "%f\r" vicMin_c)
+				;;fprintf(filekiemtra "\n")
+				
+				fprintf(filekiemtra "%f\r" openLoopGain_d)
+				fprintf(filekiemtra "%f\r" error_d)
+				fprintf(filekiemtra "%f\r" slewRate_d)
+				fprintf(filekiemtra "%f\r" vicMax_d)
+				fprintf(filekiemtra "%f\r" vicMin_d)
+				;;fprintf(filekiemtra "\n")
+				
+				fprintf(filekiemtra "%f\r" openLoopGain_e)
+				fprintf(filekiemtra "%f\r" error_e)
+				fprintf(filekiemtra "%f\r" slewRate_e)
+				fprintf(filekiemtra "%f\r" vicMax_e)
+				fprintf(filekiemtra "%f\r" vicMin_e)
+				;;fprintf(filekiemtra "\n")
+				
+				fprintf(filekiemtra "%f\r" openLoopGain_f)
+				fprintf(filekiemtra "%f\r" error_f)
+				fprintf(filekiemtra "%f\r" slewRate_f)
+				fprintf(filekiemtra "%f\r" vicMax_f)
+				fprintf(filekiemtra "%f\r" vicMin_f)
+				;;fprintf(filekiemtra "\n")
+				
+
+			close(filekiemtra)
+)
+
+khoitao()
+chay()
+exit
+
